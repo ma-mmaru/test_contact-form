@@ -28,4 +28,4 @@ Laravel環境構築
 ・nginx 1.29.4
 
 ![ER図](./test_contact-form.drawio.png)
-![要件シート](https://docs.google.com/spreadsheets/d/1Iwj-o83FiGTuTSTGQybQEYQP5XJHd8wcFRGNGCxoRbo/edit?usp=sharing)
+[要件シートはこちら](https://docs.google.com/spreadsheets/d/1Iwj-o83FiGTuTSTGQybQEYQP5XJHd8wcFRGNGCxoRbo/edit?usp=sharing)
