@@ -1,0 +1,110 @@
+/* confirm.blade.php用 */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.header__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #8b7969;
+    text-decoration: none;
+    display: inline-block;
+}
+
+main {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.confirm__heading h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #8b7969;
+}
+
+/* 確認テーブルのスタイル */
+.confirm-table {
+    margin-bottom: 40px;
+    border: 1px solid #e0e0e0;
+}
+
+.confirm-table__inner {
+    width: 100%;
+}
+
+.confirm-table__header {
+    padding: 20px;
+    width: 20%;
+    border-bottom: 1px solid #e0e0e0;
+    color: #fff;
+    background-color: #8b7969;
+    font-weight: bold;
+}
+
+.confirm-table__text {
+    padding: 15px;
+    color: #8b7969;
+    border-bottom: 1px solid #e0e0e0;
+    word-break: break-all;
+}
+
+.confirm-table__text input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.confirm-table__row:last-child .confirm-table__header,
+.confirm-table__row:last-child .confirm-table__text {
+    border-bottom-width: 0;
+}
+
+/* ボタンエリア */
+.confirm__button {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+/* 送信ボタンのスタイル */
+.confirm__button-submit {
+    background-color: #8b7969;
+    color: #fff;
+    padding: 15px 80px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 修正ボタン */
+.confirm__button-back {
+    background-color: transparent;
+    color: #8b7969;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 80px;
+}

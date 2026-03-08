@@ -1,0 +1,83 @@
+/* thanks.blade.php用 */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* 背景文字のはみ出し防止 */
+}
+
+/* ヘッダー */
+.header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.header__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #8b7969;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* メインコンテンツ */
+.thanks__content {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 背景の巨大なテキスト */
+.thanks__content::before {
+    content: "Thank you";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    font-weight: bold;
+    color: #f4f4f4;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.thanks__heading h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #8b7969;
+    font-weight: normal;
+}
+
+/* HOMEボタン */
+.thanks__content a {
+    background-color: #8b7969;
+    color: #fff;
+    padding: 15px 80px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.thanks__content a:hover {
+    opacity: 0.8;
+}

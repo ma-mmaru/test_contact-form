@@ -1,0 +1,168 @@
+/* index.blade.php用 */
+
+body,
+input,
+select,
+textarea,
+button {
+    font-family: 'Arial', "Noto Sans JP", sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+/* ヘッダー */
+.header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.header__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #8b7969;
+    text-decoration: none;
+}
+
+/* メインレイアウト */
+main {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.contact-form__heading h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #8b7969;
+}
+
+.form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* フォームグループ */
+.form__group {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.form__group-title {
+    width: 30%;
+    padding-top: 10px;
+}
+
+.form__label--item {
+    font-weight: bold;
+    color: #8b7969;
+}
+
+.form__label--required {
+    color: #ff4d4d;
+    margin-left: 5px;
+}
+
+.form__group-content {
+    width: 70%;
+}
+
+input[type="radio"] {
+    accent-color: #8b7969;
+}
+
+/* 入力要素のスタイル */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+    display: block;
+}
+
+.form__input--name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* 前と電話番号の横並び調整 */
+.form__input--last-name,
+.form__input--first-name {
+    width: 48%;
+}
+
+.form__input--last-name {
+    margin-right: 3%;
+}
+
+/* 電話番号（3つの入力欄） */
+.form__input--text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__input--text input[name^="tel"] {
+    flex: 1;
+    text-align: center;
+}
+
+/* その他（ラジオ・エラー・ボタン） */
+.form__input--radio {
+    padding-top: 10px;
+}
+
+.form__input--radio label {
+    margin-right: 20px;
+}
+
+.form__error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+.form__button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form__button-submit {
+    background-color: #8b7969;
+    color: #fff;
+    padding: 15px 80px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form__button-submit:hover {
+    opacity: 0.8;
+}
